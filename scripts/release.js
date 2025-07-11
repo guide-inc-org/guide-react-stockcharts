@@ -13,11 +13,12 @@ try {
 	pkg.main = "index.js";
 	pkg.module = "es/index.js";
 	pkg.esnext = "es/index.js";
+	pkg.sideEffects = false;
 
 	const buildPackage = JSON.stringify(pkg, null, 2);
 
 	fs.writeFile(path.join(root, "build", "package.json"), buildPackage, function() {
-		console.log("CJS package.json file rendered");
+		console.log("CJS package.json file rendered with tree shaking support");
 	});
 } catch (er) {
 	console.error("package.json parse error: ", er);

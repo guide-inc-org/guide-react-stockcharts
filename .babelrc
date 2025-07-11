@@ -1,25 +1,22 @@
 {
 	"presets": [
-		"react",
-		"stage-3"
-	],
-	"plugins": [
-		"transform-flow-strip-types"
+		"@babel/preset-react",
+		"@babel/preset-typescript"
 	],
 	"env": {
 		"cjs": {
-			"presets": [["env"]]
+			"presets": [["@babel/preset-env"]]
 		},
 		"es": {
 			"presets": [
-				["env", { "modules": false  }]
+				["@babel/preset-env", { "modules": false }]
 			]
 		},
 		"watch": {
 			"presets": [
-				["env", {
+				["@babel/preset-env", {
 					"targets": {
-						"chrome": 59
+						"chrome": 90
 					},
 					"modules": false
 				}]
@@ -27,9 +24,9 @@
 		},
 		"server": {
 			"presets": [
-				["env", {
+				["@babel/preset-env", {
 					"targets": {
-						"node": 7.5
+						"node": 22
 					},
 					"loose": true
 				}]

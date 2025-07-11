@@ -1,13 +1,13 @@
 {
-  "name": "react-stockcharts",
-  "version": "0.7.8",
+  "name": "guide-react-stockcharts",
+  "version": "0.7.15",
   "description": "Highly customizable stock charts with ReactJS and d3",
   "main": "src/index.js",
   "module": "src/index.js",
   "author": {
-    "name": "Ragu Ramaswamy"
+    "name": "letrungdo"
   },
-  "homepage": "http://rrag.github.io/react-stockcharts/",
+  "homepage": "https://github.com/guide-inc-org/guide-react-stockcharts",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf -rf ./build",
@@ -51,52 +51,50 @@
     "save-svg-as-png": "^1.4.5"
   },
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.2",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "babel-loader": "^9.2.0",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "bootstrap": "^3.3.7",
     "cross-env": "^5.1.1",
-    "css-loader": "^0.28.7",
+    "css-loader": "^6.11.0",
     "d3-dsv": "^1.0.8",
     "es6-promise": "^4.1.1",
-    "eslint": "^4.12.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-const-immutable": "^2.0.0",
-    "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1",
-    "file-loader": "^1.1.5",
+    "file-loader": "^6.2.0",
     "html-loader": "^0.5.1",
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-plugin": "^5.6.0",
     "json-loader": "^0.5.7",
     "modernizr": "^3.5.0",
     "ncp": "^2.0.0",
-    "node-sass": "^4.9.0",
+    "sass": "^1.77.8",
     "prismjs": "^1.8.4",
-    "progress-bar-webpack-plugin": "^1.10.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "react": "^16.1.1",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
     "remarkable-loader": "^0.2.1",
-    "rimraf": "^2.6.2",
-    "sass-loader": "^6.0.6",
+    "rimraf": "^5.0.10",
+    "sass-loader": "^13.3.3",
     "shelljs": "^0.7.8",
     "shortid": "^2.2.8",
-    "style-loader": "^0.19.0",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "webpack-config-utils": "^2.3.0",
-    "webpack-dev-server": "^2.9.4",
+    "style-loader": "^3.3.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.94.0",
+    "webpack-config-utils": "^2.3.1",
+    "webpack-dev-server": "^4.15.2",
     "whatwg-fetch": "^2.0.3"
   },
   "browserify": {
@@ -133,15 +131,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rrag/react-stockcharts.git"
+    "url": "https://github.com/guide-inc-org/guide-react-stockcharts.git"
   },
   "bugs": {
-    "url": "https://github.com/rrag/react-stockcharts/issues"
+    "url": "https://github.com/guide-inc-org/guide-react-stockcharts/issues"
   },
   "maintainers": [
     {
       "name": "rrag",
       "email": "ragunath.ramaswamy@gmail.com"
     }
-  ]
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  }
 }
